@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title><%= pageTitle %></title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        .result-box {
+            width: 90%;
+            max-width: 650px;
+            margin: 100px auto;
+            background: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .message {
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            background: #222;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            background: #444;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="result-box">
+
+        <h1><%= pageTitle %></h1>
+
+        <h2><%= taskName %></h2>
+
+        <div class="message">
+
+            <p>
+                <%= message %>
+            </p>
+
+            <p>
+                The form data was processed by the Express server
+                and displayed using EJS.
+            </p>
+
+        </div>
+
+        <a href="/">
+            Back to Form
+        </a>
+
+    </div>
+
+</body>
+
+</html>
